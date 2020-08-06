@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "01980ae7-75b4-4fe9-8df7-4941fded165a",
+		"name": "nisum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Rodriguez\",\r\n    \"email\": \"juan@rodrigueza.org\",\r\n    \"password\": \"Saa23\",\r\n    \"lstPhones\": {\r\n        \"phones\": [\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            },\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            },\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Rodriguez\",\r\n    \"email\": \"juan@gmail.org\",\r\n    \"password\": \"Saa23\",\r\n    \"lstPhones\": {\r\n        \"phones\": [\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            },\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            },\r\n            {\r\n                \"number\": \"1234567\",\r\n                \"citycode\": \"2\",\r\n                \"countrycode\": \"57\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/show/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"show",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/del/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"del",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
